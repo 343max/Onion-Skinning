@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		505B00C21420FE73002B0A75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B00C11420FE73002B0A75 /* Cocoa.framework */; };
+		505B00CC1420FE73002B0A75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505B00CA1420FE73002B0A75 /* InfoPlist.strings */; };
+		505B00CE1420FE73002B0A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 505B00CD1420FE73002B0A75 /* main.m */; };
+		505B00D21420FE73002B0A75 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 505B00D01420FE73002B0A75 /* Credits.rtf */; };
+		505B00D51420FE73002B0A75 /* MWDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 505B00D41420FE73002B0A75 /* MWDocument.m */; };
+		505B00D81420FE73002B0A75 /* MWDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505B00D61420FE73002B0A75 /* MWDocument.xib */; };
+		505B00DB1420FE74002B0A75 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505B00D91420FE74002B0A75 /* MainMenu.xib */; };
+		505B00E31420FE74002B0A75 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B00E21420FE74002B0A75 /* SenTestingKit.framework */; };
+		505B00E41420FE74002B0A75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B00C11420FE73002B0A75 /* Cocoa.framework */; };
+		505B00EC1420FE74002B0A75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505B00EA1420FE74002B0A75 /* InfoPlist.strings */; };
+		505B00EF1420FE74002B0A75 /* OnionSkinningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505B00EE1420FE74002B0A75 /* OnionSkinningTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		505B00E51420FE74002B0A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505B00B41420FE73002B0A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 505B00BC1420FE73002B0A75;
+			remoteInfo = OnionSkinning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		505B00BD1420FE73002B0A75 /* OnionSkinning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnionSkinning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		505B00C11420FE73002B0A75 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		505B00C41420FE73002B0A75 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		505B00C51420FE73002B0A75 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		505B00C61420FE73002B0A75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		505B00C91420FE73002B0A75 /* OnionSkinning-Info.plist */ = {isa = PBXFileReference; path = "OnionSkinning-Info.plist"; sourceTree = "<group>"; };
+		505B00CB1420FE73002B0A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		505B00CD1420FE73002B0A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		505B00CF1420FE73002B0A75 /* OnionSkinning-Prefix.pch */ = {isa = PBXFileReference; path = "OnionSkinning-Prefix.pch"; sourceTree = "<group>"; };
+		505B00D11420FE73002B0A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		505B00D31420FE73002B0A75 /* MWDocument.h */ = {isa = PBXFileReference; path = MWDocument.h; sourceTree = "<group>"; };
+		505B00D41420FE73002B0A75 /* MWDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWDocument.m; sourceTree = "<group>"; };
+		505B00D71420FE73002B0A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MWDocument.xib; sourceTree = "<group>"; };
+		505B00DA1420FE74002B0A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		505B00E11420FE74002B0A75 /* OnionSkinningTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnionSkinningTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		505B00E21420FE74002B0A75 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		505B00E91420FE74002B0A75 /* OnionSkinningTests-Info.plist */ = {isa = PBXFileReference; path = "OnionSkinningTests-Info.plist"; sourceTree = "<group>"; };
+		505B00EB1420FE74002B0A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		505B00ED1420FE74002B0A75 /* OnionSkinningTests.h */ = {isa = PBXFileReference; path = OnionSkinningTests.h; sourceTree = "<group>"; };
+		505B00EE1420FE74002B0A75 /* OnionSkinningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnionSkinningTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		505B00BA1420FE73002B0A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B00C21420FE73002B0A75 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505B00DD1420FE74002B0A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B00E31420FE74002B0A75 /* SenTestingKit.framework in Frameworks */,
+				505B00E41420FE74002B0A75 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		505B00B21420FE73002B0A75 = {
+			isa = PBXGroup;
+			children = (
+				505B00C71420FE73002B0A75 /* OnionSkinning */,
+				505B00E71420FE74002B0A75 /* OnionSkinningTests */,
+				505B00C01420FE73002B0A75 /* Frameworks */,
+				505B00BE1420FE73002B0A75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		505B00BE1420FE73002B0A75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				505B00BD1420FE73002B0A75 /* OnionSkinning.app */,
+				505B00E11420FE74002B0A75 /* OnionSkinningTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		505B00C01420FE73002B0A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505B00C11420FE73002B0A75 /* Cocoa.framework */,
+				505B00E21420FE74002B0A75 /* SenTestingKit.framework */,
+				505B00C31420FE73002B0A75 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		505B00C31420FE73002B0A75 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505B00C41420FE73002B0A75 /* AppKit.framework */,
+				505B00C51420FE73002B0A75 /* CoreData.framework */,
+				505B00C61420FE73002B0A75 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		505B00C71420FE73002B0A75 /* OnionSkinning */ = {
+			isa = PBXGroup;
+			children = (
+				505B00D31420FE73002B0A75 /* MWDocument.h */,
+				505B00D41420FE73002B0A75 /* MWDocument.m */,
+				505B00D61420FE73002B0A75 /* MWDocument.xib */,
+				505B00D91420FE74002B0A75 /* MainMenu.xib */,
+				505B00C81420FE73002B0A75 /* Supporting Files */,
+			);
+			path = OnionSkinning;
+			sourceTree = "<group>";
+		};
+		505B00C81420FE73002B0A75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				505B00C91420FE73002B0A75 /* OnionSkinning-Info.plist */,
+				505B00CA1420FE73002B0A75 /* InfoPlist.strings */,
+				505B00CD1420FE73002B0A75 /* main.m */,
+				505B00CF1420FE73002B0A75 /* OnionSkinning-Prefix.pch */,
+				505B00D01420FE73002B0A75 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		505B00E71420FE74002B0A75 /* OnionSkinningTests */ = {
+			isa = PBXGroup;
+			children = (
+				505B00ED1420FE74002B0A75 /* OnionSkinningTests.h */,
+				505B00EE1420FE74002B0A75 /* OnionSkinningTests.m */,
+				505B00E81420FE74002B0A75 /* Supporting Files */,
+			);
+			path = OnionSkinningTests;
+			sourceTree = "<group>";
+		};
+		505B00E81420FE74002B0A75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				505B00E91420FE74002B0A75 /* OnionSkinningTests-Info.plist */,
+				505B00EA1420FE74002B0A75 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		505B00BC1420FE73002B0A75 /* OnionSkinning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505B00F21420FE74002B0A75 /* Build configuration list for PBXNativeTarget "OnionSkinning" */;
+			buildPhases = (
+				505B00B91420FE73002B0A75 /* Sources */,
+				505B00BA1420FE73002B0A75 /* Frameworks */,
+				505B00BB1420FE73002B0A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnionSkinning;
+			productName = OnionSkinning;
+			productReference = 505B00BD1420FE73002B0A75 /* OnionSkinning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		505B00E01420FE74002B0A75 /* OnionSkinningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505B00F51420FE74002B0A75 /* Build configuration list for PBXNativeTarget "OnionSkinningTests" */;
+			buildPhases = (
+				505B00DC1420FE74002B0A75 /* Sources */,
+				505B00DD1420FE74002B0A75 /* Frameworks */,
+				505B00DE1420FE74002B0A75 /* Resources */,
+				505B00DF1420FE74002B0A75 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				505B00E61420FE74002B0A75 /* PBXTargetDependency */,
+			);
+			name = OnionSkinningTests;
+			productName = OnionSkinningTests;
+			productReference = 505B00E11420FE74002B0A75 /* OnionSkinningTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		505B00B41420FE73002B0A75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 505B00B71420FE73002B0A75 /* Build configuration list for PBXProject "OnionSkinning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 505B00B21420FE73002B0A75;
+			productRefGroup = 505B00BE1420FE73002B0A75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				505B00BC1420FE73002B0A75 /* OnionSkinning */,
+				505B00E01420FE74002B0A75 /* OnionSkinningTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		505B00BB1420FE73002B0A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B00CC1420FE73002B0A75 /* InfoPlist.strings in Resources */,
+				505B00D21420FE73002B0A75 /* Credits.rtf in Resources */,
+				505B00D81420FE73002B0A75 /* MWDocument.xib in Resources */,
+				505B00DB1420FE74002B0A75 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505B00DE1420FE74002B0A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B00EC1420FE74002B0A75 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		505B00DF1420FE74002B0A75 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		505B00B91420FE73002B0A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B00CE1420FE73002B0A75 /* main.m in Sources */,
+				505B00D51420FE73002B0A75 /* MWDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505B00DC1420FE74002B0A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B00EF1420FE74002B0A75 /* OnionSkinningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		505B00E61420FE74002B0A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 505B00BC1420FE73002B0A75 /* OnionSkinning */;
+			targetProxy = 505B00E51420FE74002B0A75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		505B00CA1420FE73002B0A75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505B00CB1420FE73002B0A75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		505B00D01420FE73002B0A75 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505B00D11420FE73002B0A75 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		505B00D61420FE73002B0A75 /* MWDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505B00D71420FE73002B0A75 /* en */,
+			);
+			name = MWDocument.xib;
+			sourceTree = "<group>";
+		};
+		505B00D91420FE74002B0A75 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505B00DA1420FE74002B0A75 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		505B00EA1420FE74002B0A75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505B00EB1420FE74002B0A75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		505B00F01420FE74002B0A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		505B00F11420FE74002B0A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		505B00F31420FE74002B0A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnionSkinning/OnionSkinning-Prefix.pch";
+				INFOPLIST_FILE = "OnionSkinning/OnionSkinning-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		505B00F41420FE74002B0A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnionSkinning/OnionSkinning-Prefix.pch";
+				INFOPLIST_FILE = "OnionSkinning/OnionSkinning-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		505B00F61420FE74002B0A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OnionSkinning.app/Contents/MacOS/OnionSkinning";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnionSkinning/OnionSkinning-Prefix.pch";
+				INFOPLIST_FILE = "OnionSkinningTests/OnionSkinningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		505B00F71420FE74002B0A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OnionSkinning.app/Contents/MacOS/OnionSkinning";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnionSkinning/OnionSkinning-Prefix.pch";
+				INFOPLIST_FILE = "OnionSkinningTests/OnionSkinningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		505B00B71420FE73002B0A75 /* Build configuration list for PBXProject "OnionSkinning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505B00F01420FE74002B0A75 /* Debug */,
+				505B00F11420FE74002B0A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505B00F21420FE74002B0A75 /* Build configuration list for PBXNativeTarget "OnionSkinning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505B00F31420FE74002B0A75 /* Debug */,
+				505B00F41420FE74002B0A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		505B00F51420FE74002B0A75 /* Build configuration list for PBXNativeTarget "OnionSkinningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505B00F61420FE74002B0A75 /* Debug */,
+				505B00F71420FE74002B0A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 505B00B41420FE73002B0A75 /* Project object */;
+}

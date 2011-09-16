@@ -10,4 +10,6 @@
 
 @interface MWDocument : NSDocument
 
+@property (strong) IBOutlet NSImageView *imageView;
+
 @end

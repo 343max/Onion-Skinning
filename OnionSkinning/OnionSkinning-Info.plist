@@ -11,11 +11,12 @@
 			<array>
 				<string>jpg</string>
 				<string>png</string>
+				<string>pdf</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
 			<string></string>
 			<key>CFBundleTypeName</key>
-			<string>DocumentType</string>
+			<string>Image</string>
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>????</string>

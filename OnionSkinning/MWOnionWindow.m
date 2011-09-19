@@ -27,6 +27,7 @@
         self.alphaValue = 0.8;
         self.backgroundColor = [NSColor clearColor];
         [self setMovableByWindowBackground:YES];
+        self.level = kCGPopUpMenuWindowLevel;
     }
     
     return self;

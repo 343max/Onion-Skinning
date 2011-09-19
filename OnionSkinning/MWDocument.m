@@ -29,6 +29,11 @@
     return self;
 }
 
+- (void)dealloc;
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (NSString *)windowNibName
 {
     return @"MWDocument";

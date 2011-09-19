@@ -57,6 +57,11 @@
     return self;
 }
 
+- (void)dealloc;
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)moveBy:(CGSize)size;
 {
     NSPoint windowOrigin = self.frame.origin;

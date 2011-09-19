@@ -34,15 +34,22 @@
     return @"MWDocument";
 }
 
+- (void)synchronizeWindowTitle;
+{
+    [[self.windowControllers objectAtIndex:0] synchronizeWindowTitleWithDocumentName];
+}
+
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
     [super windowControllerDidLoadNib:aController];
-    self.imageView.image = image;
+    aController.window.backgroundColor = [NSColor colorWithPatternImage:image];
     
     NSRect windowFrame = aController.window.frame;
     windowFrame.size = image.size;
     windowFrame = [aController.window frameRectForContentRect:windowFrame];
     [aController.window setFrame:windowFrame display:YES];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(synchronizeWindowTitle) name:@"synchronizeWindowTitle" object:aController.window];
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError

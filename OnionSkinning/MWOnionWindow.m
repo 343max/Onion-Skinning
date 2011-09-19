@@ -9,6 +9,9 @@
 #import "MWOnionWindow.h"
 
 @interface MWOnionWindow ()
+{
+    NSUInteger activeStyleMask;
+}
 
 - (void)moveBy:(CGSize)size;
 
@@ -19,6 +22,22 @@
 
 @synthesize initialLocation;
 
+- (void)enableMouseClicks;
+{
+    self.ignoresMouseEvents = NO;
+    self.styleMask = activeStyleMask;
+    self.hasShadow = YES;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"synchronizeWindowTitle" object:self];
+}
+
+- (void)disableMouseClicks;
+{
+    self.ignoresMouseEvents = YES;
+    self.styleMask = NSBorderlessWindowMask;
+    self.hasShadow = NO;
+}
+
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag
 {
     self = [super initWithContentRect:contentRect styleMask:aStyle backing:bufferingType defer:flag];
@@ -28,6 +47,11 @@
         self.backgroundColor = [NSColor clearColor];
         [self setMovableByWindowBackground:YES];
         self.level = kCGPopUpMenuWindowLevel;
+        
+        activeStyleMask = self.styleMask;
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableMouseClicks) name:NSApplicationDidBecomeActiveNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disableMouseClicks) name:NSApplicationDidResignActiveNotification object:nil];
     }
     
     return self;

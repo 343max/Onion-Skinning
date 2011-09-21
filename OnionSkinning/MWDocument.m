@@ -62,6 +62,7 @@
     windowController.window.isVisible = [self frontProcessIsSimulatorOrMe];
 }
 
+
 - (id)init
 {
     self = [super init];

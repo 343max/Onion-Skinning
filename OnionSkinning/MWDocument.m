@@ -11,6 +11,7 @@
 @interface MWDocument () {
     
     NSImage *image;
+    NSTimer *checkFrontProcessTimer;
     
 }
 @end
@@ -19,12 +20,56 @@
 
 @synthesize imageView;
 
+- (BOOL)frontProcessIsSimulatorOrMe;
+{
+    BOOL isIOSSimulator = NO;
+    
+    ProcessSerialNumber frontProcess;
+    OSErr error = GetFrontProcess(&frontProcess);    
+    if (error == noErr) {
+        ProcessSerialNumber currentProcess;
+        error = GetCurrentProcess(&currentProcess);
+        
+        if (error == noErr) {
+            Boolean sameProcess;
+            error = SameProcess(&currentProcess, &frontProcess, &sameProcess);
+            
+            if (sameProcess) {
+                return YES;
+            }
+        }
+
+        CFDictionaryRef processInfo = NULL;
+        processInfo = ProcessInformationCopyDictionary(&frontProcess, kProcessDictionaryIncludeAllInformationMask);
+        if (processInfo != NULL) {
+            CFStringRef bundleIdentifier = CFDictionaryGetValue(processInfo, kCFBundleIdentifierKey);
+
+            if (bundleIdentifier) {
+                isIOSSimulator = [[NSString stringWithFormat:@"%@", bundleIdentifier] isEqualToString:@"com.apple.iphonesimulator"];
+                CFRelease(bundleIdentifier);
+            }
+            
+            //CFRelease(processInfo);
+        }
+    }
+    
+    return isIOSSimulator;
+}
+
+- (void)setWindowVisibility:(NSTimer *)timer;
+{
+    NSWindowController *windowController = [self.windowControllers objectAtIndex:0];
+    windowController.window.isVisible = [self frontProcessIsSimulatorOrMe];
+}
+
 - (id)init
 {
     self = [super init];
     if (self) {
         // Add your subclass-specific initialization here.
         // If an error occurs here, return nil.
+        
+        checkFrontProcessTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(setWindowVisibility:) userInfo:nil repeats:YES];
     }
     return self;
 }

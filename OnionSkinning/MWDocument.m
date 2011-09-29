@@ -45,7 +45,13 @@
             CFStringRef bundleIdentifier = CFDictionaryGetValue(processInfo, kCFBundleIdentifierKey);
 
             if (bundleIdentifier) {
-                isIOSSimulator = [[NSString stringWithFormat:@"%@", bundleIdentifier] isEqualToString:@"com.apple.iphonesimulator"];
+                if ([[NSString stringWithFormat:@"%@", bundleIdentifier] isEqualToString:@"com.apple.iphonesimulator"]) {
+                    isIOSSimulator = YES;
+                } else if ([[NSString stringWithFormat:@"%@", bundleIdentifier] isEqualToString:@"com.artissoftware.mac.xScope"]) {
+                    isIOSSimulator = YES;
+                }
+                
+                //NSLog(@"bundleIdentifier: %@", bundleIdentifier);
                 CFRelease(bundleIdentifier);
             }
             
